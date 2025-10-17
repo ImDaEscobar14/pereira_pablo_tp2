@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=4 uid="uid://dfa1lmth2iaro"]
 
-[ext_resource type="PackedScene" uid="uid://bsih4lhcisfdk" path="res://player.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://bsih4lhcisfdk" path="res://scripts/player.tscn" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://ch05tm4n6e308" path="res://assets/texture/light.png" id="2_0hol4"]
 [ext_resource type="PackedScene" uid="uid://u6oidunldggm" path="res://monster.tscn" id="3_0hol4"]
 [ext_resource type="TileSet" uid="uid://jwoddmtxvqeu" path="res://assets/sprites/tiles_catacombs/catacombs_tileset.tres" id="3_epypp"]
-[ext_resource type="Script" uid="uid://clmngkknhes1l" path="res://area_2d.gd" id="5_q6r6c"]
+[ext_resource type="Script" uid="uid://clmngkknhes1l" path="res://scripts/area_2d.gd" id="5_q6r6c"]
 [ext_resource type="AudioStream" uid="uid://bin1yw2u8mide" path="res://assets/audio/musique/creepy_music.mp3" id="6_kdubu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]

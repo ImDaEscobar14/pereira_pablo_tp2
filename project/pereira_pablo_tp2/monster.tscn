@@ -1,6 +1,6 @@
 [gd_scene load_steps=42 format=3 uid="uid://u6oidunldggm"]
 
-[ext_resource type="Script" uid="uid://bu2374cjuotej" path="res://character_body_2d.gd" id="1_mrqeg"]
+[ext_resource type="Script" uid="uid://bu2374cjuotej" path="res://scripts/character_body_2d.gd" id="1_mrqeg"]
 [ext_resource type="Texture2D" uid="uid://b0nnyui4w4su5" path="res://assets/sprites/monster_sprites/walk.png" id="1_s3gyj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mrqeg"]
