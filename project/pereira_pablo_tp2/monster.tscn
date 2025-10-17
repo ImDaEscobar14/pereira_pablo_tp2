@@ -1,5 +1,6 @@
-[gd_scene load_steps=41 format=3 uid="uid://u6oidunldggm"]
+[gd_scene load_steps=42 format=3 uid="uid://u6oidunldggm"]
 
+[ext_resource type="Script" uid="uid://bu2374cjuotej" path="res://character_body_2d.gd" id="1_mrqeg"]
 [ext_resource type="Texture2D" uid="uid://b0nnyui4w4su5" path="res://assets/sprites/monster_sprites/walk.png" id="1_s3gyj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mrqeg"]
@@ -290,20 +291,22 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iq4xw"]
-size = Vector2(48, 40)
+size = Vector2(49, 43)
 
 [node name="monster" type="Node2D"]
 position = Vector2(79, 91)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_mrqeg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(0, -29)
 scale = Vector2(1.6875, 1.6875)
 sprite_frames = SubResource("SpriteFrames_umtqm")
-animation = &"idle"
+animation = &"bas"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0.5, -15.5)
 shape = SubResource("RectangleShape2D_iq4xw")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CharacterBody2D"]

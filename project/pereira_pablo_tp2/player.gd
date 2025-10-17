@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Player
 var speed = 400.0;
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
@@ -8,14 +8,16 @@ var speed = 400.0;
 @onready var menu_pause = $Camera2D/MenuPause
 @onready var reprendre_button = menu_pause.get_node("VBoxContainer/Reprendre")
 @onready var quitter_button = menu_pause.get_node("VBoxContainer/Quitter")
+static var instance = null
 
 var paused = false
 
 func _ready():
 	reprendre_button.pressed.connect(_on_reprendre_pressed)
 	quitter_button.pressed.connect(_on_quitter_pressed)
+	instance = self
 	
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		toggle_pause()
 		
@@ -33,7 +35,7 @@ func _on_quitter_pressed():
 		get_tree().quit()
 
 
-const SPEED = 250.0
+const SPEED = 75.0
 
 var directionName = "bas";
 #les mouvements du player
